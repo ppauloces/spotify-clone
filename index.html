@@ -7,42 +7,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     <title>Spotify - Web Player</title>
 </head>
 
-<body>
+<body style="background-color: #2941AB; font-family: 'Poppins', sans-serif">
 
     <nav>
         <div class="nav-wrapper" style="background-color: #000000;">
-            <div class="center">
-            <img src="img/logo.png" alt="" width="90px" align="center">
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <div class="">
+                <img src="img/logo.png" alt="" width="140px" align="center" style="padding-left: 50px;">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="collapsible.html">Web Player</a></li>
+                    <li><a class="waves-effect btn-small" style="border-radius: 20px; background-color: white; color: #000000;">Baixar</a></li>
+                </ul>
             </div>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">Javascript</a></li>
-                <li><a href="mobile.html">Mobile</a></li>
-            </ul>
         </div>
     </nav>
 
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+    <ul class="sidenav" id="mobile-demo" style="background-color: #000000;">
+        <li><a href="collapsible.html" style="color: white; text-align: center; padding-top: 10px;">Web Player</a></li>
+        <li><a class="waves-effect btn-small" style="border-radius: 20px; background-color: white; color: #000000;">Baixar</a></li>
     </ul>
 
+    <div class="center" style="padding-top: 7rem;">
+        <h1 style="font-weight: 600; font-size: 80px; color: #1ED760;">Escutar muda tudo</h1>
+        <span style="color: #1ED760; font-size: 18px;">Milhões de músicas e podcasts para explorar. E<br> nem precisa de cartão de crédito.</span><br>
+        <a class="waves-effect btn-small" style="border-radius: 50px; background-color: #1ED760; color: #2941AB; margin-top: 30px;font-size: bold;">ACESSE O WEB PLAYER</a>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <div style="padding-top: 8rem;">
+        <footer class="page-footer" style="background-color: #000000; align-items: flex-start;">
+            <div class="container">
+              <div class="row">
+                <div class="s12">
+                  <img src="img/logo.png" width="90px">
+                </div>
+                <br>
+                <div class="s12">
+                  <p style="color: #919483;">EMPRESA</p>
+                  <ul>
+                    <li><span href="#!" style="font-size: 15px;">Sobre</span></li>
+                    <br>
+                    <li><span href="#!" style="font-size: 15px;">Emprego</span></li>
+                    <br>
+                    <li><span href="#!" style="font-size: 15px;">For the Record</span></li>
+                  </ul>
+                </div>
+
+                <br>
+                <div class="s12">
+                  <p style="color: #919483;">COMUNIDADES</p>
+                  <ul>
+                    <li><span href="#!" style="font-size: 15px;">Para Artistas</span></li>
+                    <br>
+                    <li><span href="#!" style="font-size: 15px;">Desenvolvedores</span></li>
+                    <br>
+                    <li><span href="#!" style="font-size: 15px;">Publicidade</span></li>
+                    <br>
+                    <li><span href="#!" style="font-size: 15px;">Investidores</span></li>
+                    <br>
+                    <li><span href="#!" style="font-size: 15px;">Fornecedores</span></li>
+                  </ul>
+                </div>
+
+                <br>
+                <div class="s12">
+                    <p style="color: #919483;">LINKS ÚTEIS</p>
+                    <ul>
+                      <li><span href="#!" style="font-size: 15px;">Suporte</span></li>
+                      <br>
+                      <li><span href="#!" style="font-size: 15px;">Player da Web</span></li>
+                      <br>
+                      <li><span href="#!" style="font-size: 15px;">Aplicativo móvel grátis</span></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+            <div class="footer-copyright" style="justify-content: space-around;">
+              <a class="grey-text" style="font-size: 10px;" href="#!">Legal</a>
+              <a class="grey-text" style="font-size: 10px;" href="#!">Centro de Privacidade</a>
+              <a class="grey-text" style="font-size: 10px;" href="#!">Política de Privacidade</a>
+              <a class="grey-text" style="font-size: 10px;" href="#!">Cookies</a>
+              <a class="grey-text" style="font-size: 10px;" href="#!">Sobre anúncios</a>
+              </div>
+            </div>
+          </footer>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
-         $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-     
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
     </script>
 </body>
 
